@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	
         <meta charset="utf-8" />
-        <title>Home page</title>
+        <title>add teams with csv</title>
     </head>
     <body>
-        <p>Bienvenue sur le jeu Molkky V1</p>
+        <p>Lets play with CSV !</p>
     </body>
 </html>
