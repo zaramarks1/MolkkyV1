@@ -49,6 +49,8 @@ public class Teams extends HttpServlet {
 			Team team1 = new Team(request.getParameter("team1").toString());
 			Team team2 = new Team(request.getParameter("team2").toString());
 			
+			team1.setIsTurn(true);
+			
 			request.setAttribute( "team1", team1);
 			request.setAttribute( "team2", team2);
 			
@@ -70,4 +72,39 @@ public class Teams extends HttpServlet {
 		//this.getServletContext().getRequestDispatcher("/WEB-INF/main.jsp").forward(request, response);
 	}
 
+	/*<!-- <p><c:out value="${ variable }">Valeur par défaut</c:out></p>
+<c:set var="pseudo" value="Mateo21" scope="page" />
+<c:remove var="pseudo" scope="page" />
+<c:set target="${ auteur }" property="prenom" value="Mathieu" />
+<p><c:out value="${ auteur.prenom }" /></p>
+
+IF 
+
+<c:if test="${ 50 > 10 }" var="variable">
+    C'est vrai !
+</c:if>
+
+CASE
+<c:choose>
+    <c:when test="${ variable }">Du texte</c:when>
+    <c:when test="${ autreVariable }">Du texte</c:when>
+    <c:when test="${ encoreUneAutreVariable }">Du texte</c:when>
+    <c:otherwise></c:otherwise>
+</c:choose> 
+
+FOR
+<c:forEach var="i" begin="0" end="10" step="2">
+    <p>Un message n°<c:out value="${ i }" /> !</p>
+</c:forEach>
+
+<c:forEach items="${ titres }" var="titre" varStatus="status">
+    <p>N°<c:out value="${ status.count }" /> : <c:out value="${ titre }" /> !</p>
+</c:forEach>
+
+<c:forTokens var="morceau" items="Un élément/Encore un autre élément/Un dernier pour la route" delims="/ ">
+    <p>${ morceau }</p>
+</c:forTokens>
+-->
+
+*/
 }

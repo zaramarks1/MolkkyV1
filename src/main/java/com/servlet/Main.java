@@ -34,10 +34,11 @@ public class Main extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//System.out.println("post main");
+		System.out.println("post main");
 		
 		System.out.println(request.getParameter("team1"));
 		System.out.println(request.getParameter("team2"));
+		System.out.println(request.getParameter("score"));
 		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/main.jsp").forward(request, response);
 		//doGet(request, response);

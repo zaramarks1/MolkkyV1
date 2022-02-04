@@ -1,4 +1,3 @@
-<%@ page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,14 +14,14 @@
 <body>
 	<div align="center">
 		<h1 style="line-height: 3.5em;">Game Molkky Version 1 !</h1>
-		<form action="action=" main.jsp" name="teams" method="post">
+		<form method="post">
 			<table style="with: 80%">
 				<tr>
-					<td>Team 1</td>
+					<td><c:out value="Team 1"/></td>
 					<td><input type="text" name="team1" /></td>
 				</tr>
 				<tr>
-					<td>Team 2</td>
+					<td><c:out value="Team 2"/></td>
 					<td><input type="text" name="team2" /></td>
 				</tr>
 				<td colspan="3">
@@ -31,9 +30,9 @@
 		</form>
 
 		
-		<form action="action=" teamsWithCSV.jsp" name="teamsWithCSV" method="post">
+		<form  name="teamsWithCSV" method="post">
 			<table style="with: 80%">
-				<td><b >Choose csv file to upload (not obligatory) :</b></td>
+				<td><b ><c:out value="Choose csv file to upload (not obligatory) :"/></b></td>
 				<td><INPUT  NAME="file"
 					TYPE="file"></td>
 				</tr>
