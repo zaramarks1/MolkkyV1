@@ -21,6 +21,17 @@ public class Team {
 	
 	
 	
+	public Team(String name, int score, int turn, boolean isWinner, boolean isTurn) {
+		super();
+		this.name = name;
+		this.score = score;
+		this.turn = turn;
+		this.isWinner = isWinner;
+		this.isTurn = isTurn;
+	}
+
+
+
 	public Team(String name, int score) {
 		super();
 		this.name = name;

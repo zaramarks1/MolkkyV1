@@ -43,6 +43,7 @@ public class Teams extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.out.println("post team");
 		
 		if(request.getParameter("teams") != null) {
 			
@@ -67,6 +68,8 @@ public class Teams extends HttpServlet {
 			
 			this.getServletContext().getRequestDispatcher("/WEB-INF/teamsWithCSV.jsp").forward(request, response);
 		}
+		
+		this.getServletContext().getRequestDispatcher("/WEB-INF/main.jsp").forward(request, response);
 		
 		//System.out.println("post teams");
 		//this.getServletContext().getRequestDispatcher("/WEB-INF/main.jsp").forward(request, response);
